@@ -3,13 +3,13 @@ import urllib
 
 import scrapy
 
-from simple_scrapy.simple_scrapy.items import SimpleScrapyItem
+from simple_scrapy.items import SimpleScrapyItem
 
 
 class DoubanBookSpiderSpider(scrapy.Spider):
     name = 'douban_book_spider'
     # 允许爬取的域名（如果遇到非该域名的url则爬取不到数据）
-    allowed_domains = ['www.douban.com']
+    allowed_domains = ['douban.com']
     # 起始爬取的url
     start_urls = ['https://book.douban.com/tag/%E7%BC%96%E7%A8%8B?start=0&type=T']
 

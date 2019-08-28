@@ -43,7 +43,7 @@ def book_info_spider(book_tag):
     try_times = 0
 
     while 1:
-        # time.sleep(np.random.rand() * 1)
+        time.sleep(np.random.rand() * 1)
         try_times += 1;
 
         url = 'https://book.douban.com/tag/' + urllib.parse.quote(book_tag) + '?start= ' + str(page_num * 20) + '&type=T'
