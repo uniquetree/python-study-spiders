@@ -7,14 +7,11 @@
 
 import scrapy
 
-
 class SimpleScrapyItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
     sn_id = scrapy.Field()
     title = scrapy.Field()
     author_info = scrapy.Field()
     pub_info = scrapy.Field()
     rating = scrapy.Field()
     people_num = scrapy.Field()
-    pass
+

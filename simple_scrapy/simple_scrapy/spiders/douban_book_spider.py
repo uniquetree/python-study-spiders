@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 import urllib
-
 import scrapy
-
 from simple_scrapy.items import SimpleScrapyItem
-
 
 class DoubanBookSpiderSpider(scrapy.Spider):
     name = 'douban_book_spider'
@@ -16,7 +13,6 @@ class DoubanBookSpiderSpider(scrapy.Spider):
     # 爬取多页
     pageNum = 0  # 起始页码
     url = 'https://book.douban.com/tag/%s?start=%s&type=T'
-
     count = 0
 
     # 访问起始URL并获取结果后的回调函数，该函数的response参数就是向起始的url发送请求后，获取的响应对象.该函数返回值必须为可迭代对象或者NUll

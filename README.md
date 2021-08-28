@@ -117,6 +117,7 @@ pip3 install scrapy
 ```
 
 #### 项目结构解析
+
 ```
 project_name/
    scrapy.cfg          #项目的主配置信息。
@@ -141,3 +142,4 @@ project_name/
 
 ## 八、推荐书籍
 > 《Python网络爬虫权威指南》
+
